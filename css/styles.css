@@ -320,7 +320,7 @@ img {
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+@media screen (min-width: 768px) and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .hero {
@@ -338,7 +338,9 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
     .hero {
         max-width: 1158px;
         padding: 188px 0;
